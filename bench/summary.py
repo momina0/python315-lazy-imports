@@ -17,4 +17,6 @@ for scenario in dict.fromkeys(r["scenario"] for r in startup["rows"]):
 broken = [r for r in compat["rows"] if r["lazy_all"] != "ok"]
 print(f"\n-X lazy_imports=all (every import lazy): {len(compat['rows']) - len(broken)}/{len(compat['rows'])} libraries still work")
 for r in broken:
-    print(f"  {r['library']:<11} {r['lazy_all'][:72]}")
+    # Drop object reprs and long tails so each error fits on one line.
+    error = r["lazy_all"].split(" for target ")[0].split(" and no __dict__")[0].replace("sqlalchemy.exc.", "")
+    print(f"  {r['library']:<11} {error}")
