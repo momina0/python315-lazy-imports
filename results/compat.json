@@ -1,0 +1,89 @@
+{
+  "python": "3.15.2",
+  "rows": [
+    {
+      "library": "numpy",
+      "version": "2.5.4",
+      "normal": "ok",
+      "lazy_all": "ok"
+    },
+    {
+      "library": "pandas",
+      "version": "3.1.0",
+      "normal": "ok",
+      "lazy_all": "ImportError: numpy._core.multiarray failed to import"
+    },
+    {
+      "library": "pydantic",
+      "version": "2.14.1",
+      "normal": "ok",
+      "lazy_all": "ok"
+    },
+    {
+      "library": "sqlalchemy",
+      "version": "2.1.6",
+      "normal": "ok",
+      "lazy_all": "sqlalchemy.exc.InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.SingletonThreadPool object at 0x000001F662343770>'"
+    },
+    {
+      "library": "fastapi",
+      "version": "0.162.0",
+      "normal": "ok",
+      "lazy_all": "ok"
+    },
+    {
+      "library": "httpx",
+      "version": "0.28.1",
+      "normal": "ok",
+      "lazy_all": "ok"
+    },
+    {
+      "library": "requests",
+      "version": "2.34.2",
+      "normal": "ok",
+      "lazy_all": "ok"
+    },
+    {
+      "library": "boto3",
+      "version": "1.43.119",
+      "normal": "ok",
+      "lazy_all": "ok"
+    },
+    {
+      "library": "openai",
+      "version": "3.39.0",
+      "normal": "ok",
+      "lazy_all": "AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes. Did you mean '.__reduce__' instead of '.__module__'?"
+    },
+    {
+      "library": "rich",
+      "version": "15.0.0",
+      "normal": "ok",
+      "lazy_all": "ok"
+    },
+    {
+      "library": "typer",
+      "version": "0.27.3",
+      "normal": "ok",
+      "lazy_all": "ok"
+    },
+    {
+      "library": "click",
+      "version": "8.5.0",
+      "normal": "ok",
+      "lazy_all": "ok"
+    },
+    {
+      "library": "jinja2",
+      "version": "3.1.6",
+      "normal": "ok",
+      "lazy_all": "ok"
+    },
+    {
+      "library": "uvicorn",
+      "version": "0.54.0",
+      "normal": "ok",
+      "lazy_all": "ok"
+    }
+  ]
+}

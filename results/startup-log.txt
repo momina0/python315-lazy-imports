@@ -1,0 +1,18 @@
+{"scenario": "cli --help", "mode": "normal", "median_ms": 5498, "p90_ms": 10280, "min_ms": 5184, "modules": 1720}
+{"scenario": "cli --help", "mode": "all", "median_ms": 1236, "p90_ms": 1283, "min_ms": 1210, "modules": 162}
+{"scenario": "cli --help", "mode": "keyword", "median_ms": 1195, "p90_ms": 2114, "min_ms": 1083, "modules": 330}
+{"scenario": "cli fetch (needs requests)", "mode": "normal", "median_ms": 10020, "p90_ms": 11132, "min_ms": 5132, "modules": 1624}
+{"scenario": "cli fetch (needs requests)", "mode": "all", "median_ms": 762, "p90_ms": 767, "min_ms": 755, "modules": 206}
+{"scenario": "cli fetch (needs requests)", "mode": "keyword", "median_ms": 2583, "p90_ms": 2633, "min_ms": 2569, "modules": 364}
+{"scenario": "cli report (needs pandas)", "mode": "normal", "median_ms": 5310, "p90_ms": 9851, "min_ms": 4782, "modules": 1624}
+{"scenario": "cli report (needs pandas)", "mode": "all", "failed": "ImportError: numpy._core.multiarray failed to import"}
+{"scenario": "cli report (needs pandas)", "mode": "keyword", "median_ms": 5291, "p90_ms": 5317, "min_ms": 3389, "modules": 687}
+{"scenario": "api boot", "mode": "normal", "median_ms": 10006, "p90_ms": 15974, "min_ms": 6320, "modules": 1888}
+{"scenario": "api boot", "mode": "all", "failed": "sqlalchemy.exc.InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.StaticPool object at 0x00000144AE28F770>'"}
+{"scenario": "api boot", "mode": "keyword", "median_ms": 2764, "p90_ms": 5850, "min_ms": 2735, "modules": 570}
+{"scenario": "api boot + GET /health", "mode": "normal", "median_ms": 10608, "p90_ms": 13346, "min_ms": 6544, "modules": 1896}
+{"scenario": "api boot + GET /health", "mode": "all", "failed": "sqlalchemy.exc.InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.StaticPool object at 0x0000020E4444B8C0>'"}
+{"scenario": "api boot + GET /health", "mode": "keyword", "median_ms": 6026, "p90_ms": 6123, "min_ms": 3056, "modules": 625}
+{"scenario": "api boot + GET /report (needs pandas)", "mode": "normal", "median_ms": 6975, "p90_ms": 12988, "min_ms": 6299, "modules": 1896}
+{"scenario": "api boot + GET /report (needs pandas)", "mode": "all", "failed": "sqlalchemy.exc.InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.StaticPool object at 0x00000209A83AB8C0>'"}
+{"scenario": "api boot + GET /report (needs pandas)", "mode": "keyword", "median_ms": 4920, "p90_ms": 9541, "min_ms": 4583, "modules": 1059}
